@@ -1,0 +1,44 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/top_nav.ejs %>
+
+
+  <main class="l-main" >
+  <section class="contactme">
+    <div class="container">
+      <div class="contact-infor">
+        <h1> Contact me: </h1>
+  <p> Rex C. Robles</p>      
+  <p> Email : rxcrobles@gmail.com</p>
+  <p> Phone no: +1 4379881181</p>
+  
+      </div>
+      <div class="contactme-content">
+        <form class="form" method="POST">
+        <div class="mb-3">
+          <p> For Further queries, please fill the form below :</p>
+          <label for="exampleFormControlInput1" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" width: 40% placeholder="John" name="ename">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Mobile Number:</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="+1 ### ### ####" name="enumber">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email Address:</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="johndoe@example.com" name="eemail">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Message:</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Dear Rex, " name="emessage">
+        </div>
+        <button type="submit"  class="btn about-resume-btn "  >Submit</button>
+      </form>
+      </div>
+      </div>
+  </section>
+</main>
+
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>

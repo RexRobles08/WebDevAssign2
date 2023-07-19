@@ -1,0 +1,27 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/top_nav.ejs %>
+
+<main class="container">
+    <form class="form" method="POST">
+        <div class="form-group">
+          <label for="ptitle">Project Title:</label>
+          <input type="text" class="form-control" id="ptitle" name="ptitle" value ="<%= project.project_title %>">
+        </div>
+        <div class="form-group">
+            <label for="pdescription">Project Description:</label>
+            <input type="text" class="form-control" id="pdescription" name="pdescription" value ="<%= project.project_description %>">
+
+        </div>
+        <div class="form-group padding-bt-2">
+          <label for="pdeadline" class="project-form-label">Project Deadline</label>
+          <input type="date" class="form-control" id="pdeadline" name="deadline">
+        <br>
+        <button type="submit" class="btn btn-primary">Update</button>
+      </form>
+</main>
+
+
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>
